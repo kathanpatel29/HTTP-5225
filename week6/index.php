@@ -53,8 +53,12 @@
                       <div class="card-footer">
                         <div class="row">
                           <div class="col">
-                            <form action="">
+                            <form action="update.php" method="POST">
                               <input type="hidden" name="id" value="' . $school['id'] . '">
+                              <input type="hidden" name="schoolName" value="' . $school['School Name'] . '">
+                              <input type="hidden" name="schoolLevel" value="' . $school['School Level'] . '">
+                              <input type="hidden" name="phone" value="' . $school['Phone'] . '">
+                              <input type="hidden" name="email" value="' . $school['Email'] . '">
                               <button type="submit" name="updateSchool" class="btn btn-sm btn-primary">Update</button>
                             </form>
                           </div>

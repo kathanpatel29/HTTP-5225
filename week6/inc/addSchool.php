@@ -9,7 +9,7 @@
     $email = $_POST['email'];
 
     // Connection string
-    include('../reusable/con.php');
+    include('../reusable/conn.php');
     $query = "INSERT INTO schools (
                 `School Name`, 
                 `School Level`, 

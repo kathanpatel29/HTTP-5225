@@ -36,7 +36,7 @@
   </div>
   
   <?php 
-      include('reusable/con.php');
+      include('./reusable/conn.php');
       $query = 'SELECT * FROM schools';
       $schools = mysqli_query($connect, $query);
   ?>
@@ -45,7 +45,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <form action="inc/addSchool.php" method="POST">
+          <form action="./inc/addSchool.php" method="POST">
             <div class="mb-3">
               <label for="schoolName" class="form-label">School Name</label>
               <input type="text" class="form-control" id="schoolName" name="schoolName" aria-describedby="school Name">
